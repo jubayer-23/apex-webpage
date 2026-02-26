@@ -1,0 +1,143 @@
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.about-navbar {
+    background-color:rgb(233, 47, 47);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+
+}
+.about-nav-logo {
+    height:30px;
+    margin-left: 20px;
+}
+.nav-button-section{
+    margin-right:50px;
+}
+.home-button, .about-button {
+    text-decoration: none;
+    color: white;
+    margin-right:20px;
+}
+.contact-header {
+  background: #f4f4f4;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.contact-main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+
+.social-links {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-links h2 {
+  color: #333;
+  font-size: 22px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-link.facebook {
+  background-color: #1877f2;
+}
+
+.social-link.facebook:hover {
+  background-color: #165bc0;
+}
+
+.social-link.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-link.instagram:hover {
+  filter: brightness(0.9);
+}
+
+.social-link.website {
+  background-color: #28a745;
+}
+
+.social-link.website:hover {
+  background-color: #218838;
+}
+
+.social-link.email {
+  background-color: #d14836;
+}
+
+.social-link.email:hover {
+  background-color: #c5221f;
+}
+
+.social-link span {
+  display: block;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-link {
+    width: 100px;
+    padding: 10px;
+    font-size: 12px;
+  }
+}

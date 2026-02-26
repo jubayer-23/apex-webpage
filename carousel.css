@@ -1,27 +1,28 @@
 .slider {
     width: 90%;
-    height: 500px;
+    max-width: 800px; /* limit width for large screens */
     overflow: hidden;
     position: relative;
     margin: 20px auto;
+    /* height will be determined by image aspect ratio */
 }
 
 .slide-track {
     display: flex;
-    width: calc(5 * 100%);
+    /* no fixed width needed; flex handles layout */
     animation: slide 18s linear infinite;
 }
 
 .slide {
     flex: 0 0 100%;
-    height: 100%;
 }
 
 .slide img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-    object-fit: contain;
+    object-fit: cover; /* fill container without distortion */
+    max-height: 500px; /* prevent overly tall images */
 }
 
 @keyframes slide {

@@ -1,0 +1,37 @@
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.about-nav-button, .contact-nav-button {
+    color: white;
+    text-decoration: none;
+    margin-right:10px;
+}
+
+.about-container {
+    display:grid;
+    margin-top: 
+}
+
+.about-navbar {
+    background-color:rgb(233, 47, 47);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    
+
+}
+.about-nav-logo {
+    height:30px;
+    margin-left: 20px;
+}
+.nav-button-section{
+    margin-right:50px;
+}
+.home-button, .contact-button {
+    text-decoration: none;
+    color: white;
+    margin-right:20px;
+}
