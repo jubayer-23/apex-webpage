@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="to-do-list.css">
+    <link rel="stylesheet" href="carousel.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+           <div class="left-section">
+             <img class="navbar-logo"src="logo/221660_114.jpg">
+           </div>
+           <div class="middle-section">
+            <input class="search-box" type="text" placeholder="Enter your item">
+           </div>
+            <div class="right-section">
+                <a> About</a>
+                <a> Contacts</a>
+            </div>
+
+        </div>
+
+        <div class="main-body">
+            <div class="todo-container">
+                <h1>My To-Do List</h1>
+                <div class="input-section">
+                <input type="text" class="taskInput-class" id="taskInput" placeholder="Enter a new task...">
+                <button class="add-task-button" onclick="addTask()">Add</button>
+                </div>
+                <ul id="taskList"></ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="to-do-list.js"></script>
+</body>
+</html>

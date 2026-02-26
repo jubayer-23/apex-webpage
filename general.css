@@ -1,0 +1,12 @@
+.container {
+    display:grid;
+    grid-template-rows: 50px 1fr;
+
+}
+
+.main-body {
+    display:gird;
+    grid-template-rows: 250px 1fr;
+    justify-content: center;
+    align-items: center;
+}
