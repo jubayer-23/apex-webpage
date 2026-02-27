@@ -14,7 +14,7 @@ h1 {
 
 .about-container {
     display:grid;
-    margin-top: 
+    margin-top:0px; 
 }
 
 .about-navbar {
