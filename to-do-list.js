@@ -9,16 +9,16 @@ function addTask() {
 
   const taskList = document.getElementById("taskList");
 
-  // Create new list item
+ 
   const li = document.createElement("li");
   li.textContent = taskText;
 
-  // Toggle completion on click
+  
   li.addEventListener("click", () => {
     li.classList.toggle("completed");
   });
 
-  // Delete button
+  
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
   deleteBtn.className = "delete-btn";
@@ -29,6 +29,6 @@ function addTask() {
   li.appendChild(deleteBtn);
   taskList.appendChild(li);
 
-  // Clear input
+  
   taskInput.value = "";
 }

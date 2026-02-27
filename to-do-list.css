@@ -1,12 +1,17 @@
 .todo-container {
     display: grid;
     justify-content: center;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .taskInput-class {
     padding: 8px 10px;
     border-radius: 15px;
-
+    border: 1px solid #ccc;
+    width: 220px;
 }
 .add-task-button {
     padding: 7px 10px;
@@ -15,5 +20,54 @@
     color:white;
     border-style: none;
     border-radius:10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.add-task-button:hover {
+    background-color: rgb(200, 35, 35);
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.listed-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.listed-items li {
+    background: #fff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.listed-items li:hover {
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+.listed-items li.completed {
+    opacity:0.6;
+}
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.delete-btn:hover {
+    color: red;
 }
 
